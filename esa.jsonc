@@ -1,0 +1,7 @@
+{
+  "name": "kigermap-frontend-dist",
+  "assets": {
+    "directory": "./",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}

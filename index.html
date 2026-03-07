@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- 基础 Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- SEO Meta -->
+    <title>Kigurumi Map - 全球Kigurumi爱好者地图 | 在KigerMap连接爱好，探索工坊</title>
+    <meta name="description" content="Kigurumi Map 是全球最大的 Kigurumi 爱好者地图。发现身边的Kiger玩家，探索优质工坊，分享你的 Kigurumi 作品。加入我们，连接全球 Kigurumi 爱好者！" />
+    <meta name="keywords" content="KigerMap,kigurumi map,kigmap,kigurumi,kig,kiger,头壳,kig头壳,头壳店家,kig店家,娃图,地图,河妖工房,NFD星颜玩偶,壳反应,着ぐるみ,面具,工房,工坊,cosplay,二次元,动漫,面具娘" />
+    <meta name="author" content="Kigurumi Map" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kighub.cn/" />
+    <meta property="og:title" content="Kigurumi Map - 全球Kigurumi爱好者地图" />
+    <meta property="og:description" content="发现全球Kigurumi玩家，探索优质工坊，分享你的Kigurumi作品。加入我们，连接全球Kiger玩家！" />
+    <meta property="og:image" content="https://cdn-frontend-static.kigermap.com/images/android-chrome-512x512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="Kigurumi Map" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://kighub.cn/" />
+    <meta name="twitter:title" content="Kigurumi Map - 全球Kigurumi爱好者地图" />
+    <meta name="twitter:description" content="发现全球Kigurumi爱好者，探索优质工坊，分享你的Kigurumi作品。" />
+    <meta name="twitter:image" content="https://cdn-frontend-static.kigermap.com/images/android-chrome-512x512.png" />
+    
+    <!-- Favicon 完整配置 -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-frontend-static.kigermap.com/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn-frontend-static.kigermap.com/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-frontend-static.kigermap.com/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://cdn-frontend-static.kigermap.com/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="https://cdn-frontend-static.kigermap.com/images/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn-frontend-static.kigermap.com/images/apple-touch-icon.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="https://cdn-frontend-static.kigermap.com/site.webmanifest" />
+    
+    <!-- 主题色 -->
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)" />
+    <meta name="msapplication-TileColor" content="#0F172A" />
+    <meta name="msapplication-TileImage" content="https://cdn-frontend-static.kigermap.com/images/android-chrome-192x192.png" />
+    
+    <!-- iOS Safari 配置 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="KigerMap" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- 预连接关键域名 -->
+    <link rel="preconnect" href="https://restapi.amap.com" crossorigin />
+    <link rel="preconnect" href="https://webapi.amap.com" crossorigin />
+    <link rel="preconnect" href="https://upload.kigermap.com" crossorigin />
+    <link rel="preconnect" href="https://cdn-frontend-static.kigermap.com" crossorigin />
+
+    <link rel="dns-prefetch" href="https://restapi.amap.com" />
+    <link rel="dns-prefetch" href="https://webapi.amap.com" />
+    <link rel="dns-prefetch" href="https://upload.kigermap.com" />
+    <link rel="dns-prefetch" href="https://cdn-frontend-static.kigermap.com" />
+
+    <!-- 结构化数据 JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Kigurumi Map",
+      "alternateName": "KigerMap",
+      "url": "https://kighub.cn",
+      "description": "全球最大的 Kigurumi 爱好者地图，发现身边的Kigurumi玩家，探索头壳工坊",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Kigurumi Map",
+        "url": "https://kighub.cn"
+      },
+      "inLanguage": ["zh-CN", "en", "ja"],
+      "image": "https://kighub.cn/images/android-chrome-512x512.png"
+    }
+    </script>
+    
+    <!-- 内联关键 CSS -->
+    <style>
+      *{box-sizing:border-box}
+      html{background:#0a0a0f}
+      body{background:#0a0a0f;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#fff;min-height:100vh}
+      html[data-theme="light"]{background:#F8FAFC}
+      html[data-theme="light"] body{background:#F8FAFC;color:#1E293B}
+      #root{min-height:100vh}
+      .skeleton-loader{position:fixed;inset:0;background:#0a0a0f;display:flex;flex-direction:column;z-index:9999}
+      html[data-theme="light"] .skeleton-loader{background:#F8FAFC}
+      .skeleton-header{height:56px;background:rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;padding:0 16px;gap:12px}
+      html[data-theme="light"] .skeleton-header{background:rgba(0,0,0,0.02);border-bottom-color:rgba(0,0,0,0.06)}
+      .skeleton-logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,rgba(139,92,246,0.3),rgba(236,72,153,0.3))}
+      .skeleton-text{height:20px;border-radius:6px;background:rgba(255,255,255,0.05)}
+      html[data-theme="light"] .skeleton-text{background:rgba(0,0,0,0.05)}
+      .skeleton-main{flex:1;display:flex}
+      .skeleton-sidebar{width:280px;background:rgba(255,255,255,0.02);border-right:1px solid rgba(255,255,255,0.05);padding:16px}
+      html[data-theme="light"] .skeleton-sidebar{background:rgba(0,0,0,0.02);border-right-color:rgba(0,0,0,0.06)}
+      .skeleton-map{flex:1;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center}
+      html[data-theme="light"] .skeleton-map{background:rgba(0,0,0,0.02)}
+      .skeleton-spinner{width:40px;height:40px;border:3px solid rgba(139,92,246,0.2);border-top-color:#8B5CF6;border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @media(max-width:1024px){.skeleton-sidebar{display:none}}
+    </style>
+    <script>
+      // 尽早恢复主题，避免闪烁
+      try{var t=JSON.parse(localStorage.getItem('theme-storage')||'{}');var m=t.state&&t.state.mode||'dark';if(m==='system'){m=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',m);if(m==='light'){document.documentElement.style.background='#F8FAFC';document.documentElement.style.colorScheme='light'}}catch(e){}
+    </script>
+    <script type="module" crossorigin src="https://cdn-frontend-static.kigermap.com/assets/index-DLtdMKTf.js"></script>
+    <link rel="modulepreload" crossorigin href="https://cdn-frontend-static.kigermap.com/assets/sentry-nEkv9Q8m.js">
+    <link rel="modulepreload" crossorigin href="https://cdn-frontend-static.kigermap.com/assets/query-CGvTqzCc.js">
+    <link rel="modulepreload" crossorigin href="https://cdn-frontend-static.kigermap.com/assets/router-CG_QIytY.js">
+    <link rel="modulepreload" crossorigin href="https://cdn-frontend-static.kigermap.com/assets/store-Cv1qhOIT.js">
+    <link rel="stylesheet" crossorigin href="https://cdn-frontend-static.kigermap.com/assets/index-CWAQfm0C.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) - 延迟加载，不阻塞渲染 -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX32RHBR"
+    height="0" width="0" style="display:none;visibility:hidden" loading="lazy"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG7KP32T"
+    height="0" width="0" style="display:none;visibility:hidden" loading="lazy"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- 最早执行的脚本 - 测试 JS 是否能运行 -->
+    <script>
+      window.__JS_LOADED__ = true;
+      document.write('<div id="js-test" style="display:none">JS OK</div>');
+    </script>
+    
+    <div id="root">
+      <!-- 骨架屏 - 提升 FCP -->
+      <div class="skeleton-loader" id="skeleton">
+        <div class="skeleton-header">
+          <div class="skeleton-logo"></div>
+          <div class="skeleton-text" style="width:100px"></div>
+        </div>
+        <div class="skeleton-main">
+          <div class="skeleton-sidebar">
+            <div class="skeleton-text" style="width:80%;margin-bottom:12px"></div>
+            <div class="skeleton-text" style="width:60%;margin-bottom:8px"></div>
+            <div class="skeleton-text" style="width:70%;margin-bottom:8px"></div>
+            <div class="skeleton-text" style="width:50%"></div>
+          </div>
+          <div class="skeleton-map">
+            <div class="skeleton-spinner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // 错误日志收集
+      var errorLogs = [];
+      
+      // 全局错误捕获 - 防止 JS 错误导致白屏
+      window.onerror = function(msg, url, line, col, error) {
+        var errInfo = 'Error: ' + msg + ' at ' + (url || '').split('/').pop() + ':' + line;
+        console.error('Global error:', errInfo);
+        errorLogs.push(errInfo);
+        showError();
+        return false;
+      };
+      
+      // Promise 错误捕获
+      window.addEventListener('unhandledrejection', function(event) {
+        var errInfo = 'Promise: ' + (event.reason ? (event.reason.message || event.reason) : 'Unknown');
+        console.error('Unhandled rejection:', errInfo);
+        errorLogs.push(errInfo);
+        showError();
+      });
+      
+      function showError() {
+        var skeleton = document.getElementById('skeleton');
+        if (skeleton) {
+          var errText = errorLogs.slice(-3).join('<br>');
+          skeleton.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:20px;text-align:center;"><div style="font-size:48px;margin-bottom:16px;">😅</div><div style="font-size:16px;color:#fff;margin-bottom:8px;">页面加载遇到问题</div><div style="font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:12px;max-width:300px;word-break:break-all;">' + errText + '</div><div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:16px;">请尝试使用系统浏览器访问</div><button onclick="location.reload()" style="background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:14px;cursor:pointer;">刷新重试</button></div>';
+        }
+      }
+      
+      // 检测 QQ/TIM 内置浏览器并提示
+      (function() {
+        var ua = navigator.userAgent.toLowerCase();
+        var isQQBrowser = ua.indexOf('qq/') > -1 || ua.indexOf(' qq') > -1;
+        var isTIM = ua.indexOf('tim/') > -1 || ua.indexOf(' tim') > -1;
+        var isWeixin = ua.indexOf('micromessenger') > -1;
+        var isInApp = isQQBrowser || isTIM || isWeixin;
+        
+        if (isInApp) {
+          var tip = document.createElement('div');
+          tip.id = 'browser-tip';
+          tip.style.cssText = 'position:fixed;top:0;left:0;right:0;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;padding:12px 16px;font-size:13px;text-align:center;z-index:99999;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;';
+          tip.innerHTML = '<span>💡 推荐点击右上角菜单，选择"在浏览器中打开"</span><button onclick="this.parentElement.remove()" style="background:rgba(255,255,255,0.2);border:none;color:#fff;padding:4px 12px;border-radius:6px;cursor:pointer;font-size:12px;">知道了</button>';
+          document.body.insertBefore(tip, document.body.firstChild);
+        }
+      })();
+      
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var skeleton = document.getElementById('skeleton');
+          if (skeleton && errorLogs.length === 0) skeleton.style.display = 'none';
+        }, 100);
+      });
+      
+      // 8秒后如果还显示骨架屏，说明 JS 加载失败
+      setTimeout(function() {
+        var skeleton = document.getElementById('skeleton');
+        var root = document.getElementById('root');
+        if (skeleton && skeleton.style.display !== 'none' && root && root.children.length <= 1 && errorLogs.length === 0) {
+          skeleton.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:20px;text-align:center;"><div style="font-size:48px;margin-bottom:16px;">🔄</div><div style="font-size:16px;color:#fff;margin-bottom:8px;">页面加载较慢</div><div style="font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:8px;">UA: ' + navigator.userAgent.substring(0, 50) + '...</div><div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:16px;">如长时间无响应，请尝试使用系统浏览器</div><button onclick="location.reload()" style="background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:14px;cursor:pointer;">刷新重试</button></div>';
+        }
+      }, 8000);
+    </script>
+    <!-- iOS QQ/TIM 兼容：检测 module 加载失败后回退到 legacy -->
+    <script>
+      (function() {
+        var ua = navigator.userAgent.toLowerCase();
+        var isIOSInApp = (ua.indexOf('iphone') > -1 || ua.indexOf('ipad') > -1) && 
+                         (ua.indexOf('qq/') > -1 || ua.indexOf(' qq') > -1 || 
+                          ua.indexOf('tim/') > -1 || ua.indexOf('micromessenger') > -1);
+        
+        if (isIOSInApp) {
+          // 3秒后检查 React 是否渲染，如果没有则尝试加载 legacy 脚本
+          setTimeout(function() {
+            var root = document.getElementById('root');
+            var hasContent = root && root.innerHTML.length > 1000;
+            
+            if (!hasContent) {
+              console.log('[iOS InApp] Module failed, loading legacy...');
+              // 查找页面中的 legacy 脚本并强制执行
+              var legacyPolyfill = document.querySelector('script[id="vite-legacy-polyfill"]');
+              var legacyEntry = document.querySelector('script[id="vite-legacy-entry"]');
+              
+              if (legacyPolyfill && legacyEntry) {
+                var polyfillSrc = legacyPolyfill.getAttribute('src');
+                var entrySrc = legacyEntry.getAttribute('data-src');
+                
+                var script1 = document.createElement('script');
+                script1.src = polyfillSrc;
+                script1.onload = function() {
+                  if (typeof System !== 'undefined' && System.import) {
+                    System.import(entrySrc);
+                  }
+                };
+                document.head.appendChild(script1);
+              }
+            }
+          }, 3000);
+        }
+      })();
+    </script>
+    <!-- 检测 module 脚本是否被支持/加载 -->
+    <script nomodule>
+      // 如果这段代码执行了，说明浏览器不支持 ES Module
+      var skeleton = document.getElementById('skeleton');
+      if (skeleton) {
+        skeleton.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:20px;text-align:center;"><div style="font-size:48px;margin-bottom:16px;">📱</div><div style="font-size:16px;color:#fff;margin-bottom:8px;">浏览器版本过低</div><div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:16px;">请点击右上角菜单，选择"在浏览器中打开"</div><div style="font-size:11px;color:rgba(255,255,255,0.3);word-break:break-all;max-width:280px;">UA: ' + navigator.userAgent + '</div></div>';
+      }
+    </script>
+    <!-- 3秒后检测页面是否正常渲染 -->
+    <script>
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        var skeleton = document.getElementById('skeleton');
+        var jsTest = document.getElementById('js-test');
+        
+        // 检查基础 JS 是否执行
+        var jsWorks = window.__JS_LOADED__ && jsTest;
+        
+        // 检查 React 是否已经渲染（root 下应该有除了 skeleton 之外的内容）
+        var hasReactContent = root && root.querySelector('[class*="min-h-screen"]');
+        if (!hasReactContent && skeleton && skeleton.style.display !== 'none') {
+          // React 没有渲染，显示调试信息
+          var info = 'JS基础: ' + (jsWorks ? '✓' : '✗') + ' | UA: ' + navigator.userAgent.substring(0, 60);
+          skeleton.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:20px;text-align:center;"><div style="font-size:48px;margin-bottom:16px;">⏳</div><div style="font-size:16px;color:#fff;margin-bottom:8px;">页面加载中...</div><div style="font-size:11px;color:rgba(255,255,255,0.3);word-break:break-all;max-width:300px;margin-top:12px;">' + info + '</div></div>';
+        }
+      }, 3000);
+    </script>
+    <!-- Google Tag Manager - 延迟加载，不阻塞页面渲染 -->
+    <script>
+      // 页面加载完成后延迟加载 GTM，设置超时避免被墙时阻塞
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          // 初始化 dataLayer
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+          
+          // 创建 script 标签
+          var gtmScript = document.createElement('script');
+          gtmScript.async = true;
+          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NX32RHBR';
+          
+          // 设置 3 秒超时，如果加载失败则放弃
+          var timeout = setTimeout(function() {
+            gtmScript.onerror = null;
+            gtmScript.onload = null;
+          }, 3000);
+          
+          gtmScript.onload = function() {
+            clearTimeout(timeout);
+          };
+          
+          gtmScript.onerror = function() {
+            clearTimeout(timeout);
+            console.log('[GTM] Failed to load, skipping...');
+          };
+          
+          // 插入到页面
+          var firstScript = document.getElementsByTagName('script')[0];
+          if (firstScript && firstScript.parentNode) {
+            firstScript.parentNode.insertBefore(gtmScript, firstScript);
+          }
+
+          // Google Analytics 4 (gtag.js)
+          var gtagScript = document.createElement('script');
+          gtagScript.async = true;
+          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-PYX1FZJSRE';
+          var gtagTimeout = setTimeout(function() {
+            gtagScript.onerror = null;
+            gtagScript.onload = null;
+          }, 3000);
+          gtagScript.onload = function() {
+            clearTimeout(gtagTimeout);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PYX1FZJSRE');
+          };
+          gtagScript.onerror = function() {
+            clearTimeout(gtagTimeout);
+            console.log('[GA4] Failed to load, skipping...');
+          };
+          if (firstScript && firstScript.parentNode) {
+            firstScript.parentNode.insertBefore(gtagScript, firstScript);
+          }
+        }, 2000); // 页面加载完成后延迟 2 秒再加载 GTM
+      });
+    </script>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="https://cdn-frontend-static.kigermap.com/assets/polyfills-legacy-BH_xo52L.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="https://cdn-frontend-static.kigermap.com/assets/index-legacy-DM85Q1ct.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
