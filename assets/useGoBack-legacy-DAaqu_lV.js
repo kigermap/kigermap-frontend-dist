@@ -1,0 +1,1 @@
+System.register(["./sentry-legacy-DnZS-ox8.js","./router-legacy-DqWYGL1_.js"],function(t,e){"use strict";var n,r;return{setters:[function(t){n=t.a},function(t){r=t.a}],execute:function(){t("u",function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"/",e=r();return n.useCallback(function(){window.history.length>1?e(-1):e(t)},[e,t])})}}});
